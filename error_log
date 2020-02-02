@@ -1,0 +1,7 @@
+[14-Nov-2019 14:50:42 America/Chicago] PHP Fatal error:  Uncaught exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [] does not comply with RFC 2822, 3.6.2.' in /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/Headers/MailboxHeader.php:352
+Stack trace:
+#0 /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/Headers/MailboxHeader.php(264): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('')
+#1 /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/Headers/MailboxHeader.php(108): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/Headers/MailboxHeader.php(65): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/SimpleHeaderFactory.php(60): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/SimpleHeaderSet.php(70): Swift_Mime_SimpleHeaderFacto in /home1/u0092/public_html/sendmail/pluginsphp/swift/classes/Swift/Mime/Headers/MailboxHeader.php on line 352
